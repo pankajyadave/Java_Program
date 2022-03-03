@@ -1,6 +1,6 @@
 Write a program to reverse string ? *************************************************************************************************
 
-public class Compile 
+public class Reverse 
 {
 	public static void main(String[] args) 
 	{
