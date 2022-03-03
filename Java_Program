@@ -1,0 +1,42 @@
+Write a program to reverse string ? *************************************************************************************************
+
+public class Compile 
+{
+	public static void main(String[] args) 
+	{
+		String s="nitin";
+		String sum="";
+		
+		char ch[]=s.toCharArray();
+		for(int i=s.length()-1;i>=0;i--)
+		{
+			sum=sum+ch[i];
+		}
+		System.out.println(sum);	
+	}
+}
+===================================================================================================================================================
+Write a program to reverse string at the same position ?  *****************************************************************************
+
+public class Reverse_String_At_Same_Position 
+{
+	public static void main(String[] args) 
+	{
+		String sum="";
+		String s="Pankaj Yadav";
+		
+		String s1[]=s.split(" ");
+		
+		for(int j=0;j<=s1.length-1;j++)
+		{
+			char ch[]=s1[j].toCharArray();			
+			for(int i=ch.length-1;i>=0;i--)
+			{
+				sum=sum+ch[i];
+			}
+			sum=sum+" ";
+		}
+		System.out.println(sum);
+	}
+}
+============================================================================================================================================
