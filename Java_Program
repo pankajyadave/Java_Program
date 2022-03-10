@@ -67,4 +67,49 @@ public class Reverse_String_At_Same_Position
 			}	
 		}
 ================================================================================================================================================
+Write a program to Armstrong number ?  ***********************************************************************
 
+public class ArmStrong 
+{
+	public int getcount(int num)
+	{
+		int count=0;
+		for(;num>0;)
+		{
+			num=num/10;
+			count++;
+		}
+		return count;
+	}
+	public void getValidateArmstrong(int num)
+	{
+		int sum=0;
+		int count=getcount(num);
+		int temp=num;
+		for(;num>0;)
+		{
+			int a=num%10;
+			num=num/10;
+			int out=1;
+			for(int j=1;j<=count;j++)
+			{
+				out=(a*out);
+			}
+			sum=sum+out;
+		}
+		if(temp==sum)
+		{
+			System.out.println(" armstrong");	
+		}
+		else {
+			System.out.println(" not armstrong");
+		}
+	}
+	public static void main(String[] args) 
+	{
+		ArmStrong ob=new ArmStrong();
+		ob.getValidateArmstrong(153);
+		
+	}	
+}
+=====================================================================================================================================================
