@@ -114,4 +114,17 @@ public class ArmStrong
 }
 =====================================================================================================================================================
 Write a program to find the accurance from given string ?  ***********************************************
-
+public  Compile(String input, char c)
+	{
+		int count = 0;
+		char ch[]=input.toCharArray();
+		for(int i=0;i<=input.length()-1;i++)
+		{
+			if(ch[i]==c)
+			{
+				count++;
+			}
+		}
+		System.out.println(c+" comes "+count+" times");	
+	}
+====================================================================================================================================================
